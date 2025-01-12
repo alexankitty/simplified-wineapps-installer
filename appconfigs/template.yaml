@@ -1,6 +1,19 @@
 ---
   #icon must match name in /icons
   name: 'template-app'
+  install:
+    #Download URL
+    path: 'https://path.com/to/installer.exe'
+    #Required if it's a compressed archive, will extract the contents into drive_c of the prefix
+    destination-folder: 'ModManager'
+    #only applicable if exe
+    args: '/quiet'
+    #can use instead of the download path - optional
+    github: 'alexankitty/simplified-wineapps-installer'
+    #specify which tag to download from - required if github present
+    tag: 'latest'
+    #can be a regex - required if github present
+    filename: 'file.zip'
   #support protocols for one clicks
   protocols:
     proto1:
