@@ -1,7 +1,7 @@
 # An Easy WINE Apps Installer
 WIP
 
-Utilizes the system WINE install, (WINE AppImage Launcher)[https://github.com/mmtrt/WINE_AppImage], or (umu-launcher)[https://github.com/Open-Wine-Components/umu-launcher] to install a windows application under its own prefix, with working protocol handling support.  
+Utilizes the system WINE install, [WINE AppImage Launcher](https://github.com/mmtrt/WINE_AppImage), or [umu-launcher](https://github.com/Open-Wine-Components/umu-launcher) to install a windows application under its own prefix, with working protocol handling support.  
 
 This is intended to make it easier to get a new application running by putting together a config.
 
