@@ -2,7 +2,7 @@
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2026
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simplified-wineapps-installer", "simplified-wineapps-installer.csproj", "{B2FD3CFF-5432-42A7-94C0-9B1D77E889F1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "simplified-wineapps-installer", "src/simplified-wineapps-installer.csproj", "{B2FD3CFF-5432-42A7-94C0-9B1D77E889F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
