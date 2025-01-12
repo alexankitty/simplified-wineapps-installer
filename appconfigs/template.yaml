@@ -1,0 +1,34 @@
+---
+  #icon must match name in /icons
+  name: 'template-app'
+  #support protocols for one clicks
+  protocols:
+    proto1:
+      command: '--do-something1 %U'
+    proto2:
+      command: '--do-something2 %U'
+  # dependencies to download
+  dependencies:
+    vcx64:
+      path: 'https://download.microsoft.com/download/1/6/5/165255E7-1014-4D0A-B094-B6A430A6BFFC/vcredist_x64.exe'
+      args: '/passive'
+  #wine tricks to use/install - processed in order of declaration
+  winetricks:
+    - dotnet7
+    - dotnet8
+  #minimum supported wine version
+  wine-ver-min: 8.26
+  #optionals
+  #fixes for wine versions, will be processed as less than or equal to. Will add (or replace) the config, unless disable is included in the key.
+  wine-ver-overrides:
+    "8.26":
+      winetricks:
+        - dotnet35
+        - dotnet48
+        - dotnet7
+        - dotnet8
+      dependencies:
+        vcx64:
+          disable: true
+  #only affects umu, will use the specified prefix in ~/.steam/steam/compatibilitytools.d - or download it if it doesn't exist
+  proton-ver: "GE-Proton9-4"
